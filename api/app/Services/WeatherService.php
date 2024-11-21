@@ -7,7 +7,7 @@ use App\Services\WeatherFormatter;
 
 class WeatherService
 {
-    protected $client;
+    public Client $client;
     protected $apiKey;
 
     public function __construct()
