@@ -1,12 +1,6 @@
 import React from 'react';
 
-const Details = () => {
-  const details = [
-    { id: 1, icon: 'assets/image-1.png', type: 'Vento', value: '17km/h' },
-    { id: 2, icon: 'assets/image-2.png', type: 'Umidade', value: '31%' },
-    { id: 3, icon: 'assets/image-3.png', type: 'Chuva', value: '10%' },
-  ];
-
+const Details = ({ details }) => {
   return (
     <div className="details">
       {details.map(({ id, icon, type, value }) => (

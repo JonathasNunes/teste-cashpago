@@ -5,13 +5,13 @@ import Location from './Location';
 import InfoContent from './InfoContent';
 import Details from './Details';
 
-const InfoCard = () => {
+const InfoCard = ({ cityCountry, temperature, details }) => {
   return (
     <div className="info-card">
       <CloudImage />
-      <Location />
-      <InfoContent temperature={18} />
-      <Details />
+      <Location cityCountry={cityCountry} />
+      <InfoContent temperature={temperature} />
+      <Details details={details} />
     </div>
   );
 };

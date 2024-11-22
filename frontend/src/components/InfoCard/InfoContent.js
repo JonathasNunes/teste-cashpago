@@ -4,7 +4,8 @@ const InfoContent = ({ temperature }) => {
   return (
     <div className="info-content">
       <div className="temperature">
-        {temperature}<sup>°C</sup>
+        {temperature !== undefined ? `${Math.round(temperature)}` : '--'}
+        <sup>°C</sup>
       </div>
     </div>
   );

@@ -17,6 +17,7 @@ class WeatherFormatter
             'descricao_clima' => $data['weather'][0]['description'] ?? null,
             'humidade_relativa' => $data['main']['humidity'] ?? null,
             'velocidade_vento' => $data['wind']['speed'] ?? null,
+            'cidade_pais' => $data['name']? $data['name'].", ".$data["sys"]["country"] : null,
         ];
     }
 }
