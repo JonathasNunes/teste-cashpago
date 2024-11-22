@@ -33,7 +33,12 @@ const WeatherInterface = () => {
   return (
     <div className="container">
       <SearchBar onSearch={handleSearch} />
-      {loading && <p>Carregando...</p>}
+      {loading &&  (
+        <div className="loading">
+          <div className="spinner"></div>
+          <p>Carregando...</p>
+        </div>
+      )}
       {weatherData && (
         <InfoCard
           cityCountry={weatherData.cidade_pais}
