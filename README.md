@@ -2,6 +2,7 @@
 
 # Projeto com API (Laravel) e Frontend (React)
 
+Este projeto cria uma API em Laravel que fornece informações sobre a previsão do tempo e um frontend em React para consumir essa API e exibir as informações de forma clara e interativa. Feito como desafio para a seleção do CashPago.
 Este projeto é composto por uma API desenvolvida em Laravel e um frontend desenvolvido em React. Abaixo estão as instruções para rodar o projeto, tanto utilizando Docker quanto rodando a API e o frontend separadamente.
 
 ---
@@ -63,6 +64,9 @@ Node.js e npm instalados ([guia de instalação](https://nodejs.org/pt)).
    cp .env.example .env
    ## Atualize as variáveis de ambiente no .env (ex.: configurações do banco de dados).
    ## Chave da Api do OpenWeather como OPENWEATHER_API_KEY no arquivo .env
+
+3.2. Para ter a chave da API da OpenWeather basta criar uma conta grátis e depois de logar, criar uma nova chave.
+  ([guia da api](https://openweathermap.org/appid))
 
 4. Gere a chave da aplicação:
    ```bash
